@@ -12,7 +12,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render((
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-  <App />
+     <Switch>
+          <Route exact path="/" component={ App } />
+  </Switch>
 </BrowserRouter>),
   document.getElementById('root')
 );
@@ -21,3 +23,4 @@ ReactDOM.render((
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+//  <App />
